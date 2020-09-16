@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, css, Global, ClassNames } from '@emotion/core';
-import React, { useState, useEffect } from 'react';
+import { jsx, css } from '@emotion/core';
+import { useState, useEffect } from 'react';
 //import moment from 'moment';
 
 const OuterWrapperStyle = css`
@@ -62,7 +62,7 @@ export default function Countdown(props) {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   // every 1s update TimeLeft
   useEffect(() => {
-    const timer = setInterval(() => {
+    setInterval(() => {
       setTimeLeft((time) => calculateTimeLeft());
     }, 1000);
   });

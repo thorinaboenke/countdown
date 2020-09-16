@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, Global, ClassNames } from '@emotion/core';
-import React from 'react';
+import { jsx, css } from '@emotion/core';
 import Countdown from './Countdown';
 
 const Heading = css`
@@ -24,6 +23,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

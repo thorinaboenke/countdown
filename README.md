@@ -34,4 +34,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [CodeSandbox](https://codesandbox.io/s/hidden-browser-3tovw)
 - [Netlify](https://trusting-pare-f71d51.netlify.app)
 
-![alt text](https://github.com/thorinaboenke/reactmemegenerator/blob/master/public/countdown-scrrenshot.png)
+![alt text](https://github.com/thorinaboenke/reactmemegenerator/blob/master/public/countdown-screenshot.png)

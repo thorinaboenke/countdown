@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { useState, useEffect } from 'react';
-//import moment from 'moment';
 
 const OuterWrapperStyle = css`
   /* margin: auto;
@@ -24,22 +23,22 @@ const InnerWrapperStyle = css`
 `;
 
 const AmountStyle = css`
-display: inline-block
+  display: inline-block;
   margin: 0;
-  padding: 20px;
-  text-align: left;
-  padding-left:0; 
-`;
-
-const UnitStyle = css`
-display: inline-block;
-  margin; 0;
   padding: 20px;
   text-align: left;
   padding-left: 0;
 `;
 
-export default function Countdown(props) {
+const UnitStyle = css`
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  padding-left: 0;
+`;
+
+export default function Countdown() {
   //calculate the remaining days until end of the year i.e. current year +1
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
@@ -63,15 +62,15 @@ export default function Countdown(props) {
   // every 1s update TimeLeft
   useEffect(() => {
     setInterval(() => {
-      setTimeLeft((time) => calculateTimeLeft());
+      setTimeLeft(() => calculateTimeLeft());
     }, 1000);
-  });
+  }, []);
 
   //pass timeLeft as props and map over object.keys of timeLeft to create jsx elements displaying amount and units
   function ValuesTimeLeft(props) {
     let daysHoursMinutesSecondLeft = Object.keys(props.timeLeft).map((key) => {
       return (
-        <div css={InnerWrapperStyle}>
+        <div css={InnerWrapperStyle} key={key}>
           <div css={AmountStyle}>{props.timeLeft[key]}</div>
           <div css={UnitStyle}>{key}</div>
         </div>

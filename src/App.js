@@ -16,10 +16,7 @@ function App() {
   return (
     <div>
       <div css={Heading}>Hang in there! Even {year} will pass! </div>
-      <Countdown
-        timeTillDate={'01 01 2021T00:00:00 am'}
-        timeFormat={'MM DD YYYYThh:mm:ss a'}
-      />
+      <Countdown />
     </div>
   );
 }

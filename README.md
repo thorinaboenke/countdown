@@ -1,5 +1,7 @@
 ## New Years Countdown
 
+Created during UpLeveled Web Development Bootcamp Vienna September 2020.
+
 This app displays a countdown to the end of the current year.
 
 Created with create-react-app.

@@ -1,10 +1,10 @@
-### New Years Countdown
+## New Years Countdown
 
 This app displays a countdown to the end of the current year.
 
 Created with create-react-app.
 
-## Getting started
+### Getting started
 
 Clone the repository
 
